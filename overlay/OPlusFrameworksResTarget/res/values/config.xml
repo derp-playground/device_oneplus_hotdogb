@@ -269,4 +269,7 @@
         <item>102</item>  <!-- <item>sensorRadius</item> -->
     </integer-array>
 
+    <!-- Path to warp charging status file -->
+    <string name="config_oemFastChargerStatusPath">/sys/class/power_supply/battery/fastcharger</string>
+
 </resources>

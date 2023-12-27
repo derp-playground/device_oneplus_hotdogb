@@ -16,7 +16,6 @@ $(call inherit-product, vendor/rising/config/rising.mk)
 
 # RisingOS flags
 WITH_GMS := true
-TARGET_CORE_GMS := true
 TARGET_PREBUILT_PIXEL_LAUNCHER := true
 TARGET_ENABLE_PIXEL_FEATURES := true
 TARGET_USE_GOOGLE_TELEPHONY := true
@@ -25,7 +24,7 @@ RISING_CHIPSET := Snapdragon855+
 RISING_STORAGE := 256GB
 RISING_RAM := 8GB
 RISING_BATTERY := 3800mAh
-RISING_DISPLAY := 1080×2400
+RISING_DISPLAY := 2400×1080
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := rising_hotdogb

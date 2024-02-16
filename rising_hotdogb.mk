@@ -16,8 +16,8 @@ $(call inherit-product, vendor/rising/config/rising.mk)
 
 # RisingOS flags
 WITH_GMS := true
+TARGET_HAS_UDFPS := true
 TARGET_PREBUILT_PIXEL_LAUNCHER := true
-TARGET_ENABLE_PIXEL_FEATURES := true
 TARGET_USE_GOOGLE_TELEPHONY := true
 RISING_MAINTAINER := matt0301
 RISING_CHIPSET := Snapdragon855+

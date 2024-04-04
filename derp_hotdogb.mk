@@ -29,7 +29,6 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # Boot animation
-scr_resolution := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
@@ -42,3 +41,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 # Official-ify
 DERP_BUILDTYPE := Official
+EXTRA_UDFPS_ICONS := true

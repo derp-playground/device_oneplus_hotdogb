@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
 # Inherit some common RisingOS stuff.
-$(call inherit-product, vendor/rising/config/rising.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # RisingOS flags
 WITH_GMS := true
@@ -27,7 +27,7 @@ RISING_BATTERY := 3800mAh
 RISING_DISPLAY := 2400×1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rising_hotdogb
+PRODUCT_NAME := lineage_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905

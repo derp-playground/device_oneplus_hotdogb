@@ -17,14 +17,13 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # RisingOS flags
 WITH_GMS := true
 TARGET_HAS_UDFPS := true
-TARGET_PREBUILT_PIXEL_LAUNCHER := true
-TARGET_USE_GOOGLE_TELEPHONY := true
 RISING_MAINTAINER := matt0301
 RISING_CHIPSET := Snapdragon855+
 RISING_STORAGE := 256GB
 RISING_RAM := 8GB
 RISING_BATTERY := 3800mAh
 RISING_DISPLAY := 2400×1080
+RISING_MAINTAINER := matt0301
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hotdogb
@@ -39,11 +38,6 @@ PRODUCT_SYSTEM_DEVICE := OnePlus7T
 PRODUCT_AAPT_CONFIG := xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 PRODUCT_CHARACTERISTICS := nosdcard
-
-# Boot animation
-scr_resolution := 1080
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
 
 # Build info
 PRODUCT_BUILD_PROP_OVERRIDES += \

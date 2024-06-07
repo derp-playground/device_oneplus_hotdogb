@@ -11,22 +11,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from hotdogb device
 $(call inherit-product, device/oneplus/hotdogb/device.mk)
 
-# Inherit some common RisingOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# RisingOS flags
-WITH_GMS := true
-TARGET_HAS_UDFPS := true
-RISING_MAINTAINER := matt0301
-RISING_CHIPSET := Snapdragon855+
-RISING_STORAGE := 256GB
-RISING_RAM := 8GB
-RISING_BATTERY := 3800mAh
-RISING_DISPLAY := 2400×1080
-RISING_MAINTAINER := matt0301
+# Inherit some common Infinity-X stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_hotdogb
+PRODUCT_NAME := infinity_hotdogb
 PRODUCT_DEVICE := hotdogb
 PRODUCT_BRAND := OnePlus
 PRODUCT_MODEL := HD1905
@@ -45,3 +34,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=OnePlus7T
 
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+INFINITY_MAINTAINER := matt0301
+TARGET_SUPPORTS_BLUR := true
+WITH_GAPPS := true
+INFINITY_BUILD_TYPE := OFFICIAL
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+TARGET_BUILD_GOOGLE_TELEPHONY := true

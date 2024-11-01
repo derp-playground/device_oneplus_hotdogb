@@ -14,6 +14,17 @@ $(call inherit-product, device/oneplus/hotdogb/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOS flags
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
+PRODUCT_NO_CAMERA := false
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingChipset="Snapdragon 855+" \
+    RisingMaintainer="Matheus Vieira(matt0301)"
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := lineage_hotdogb
 PRODUCT_DEVICE := hotdogb

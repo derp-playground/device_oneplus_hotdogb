@@ -16,7 +16,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # RisingOS flags
 WITH_GMS := true
-TARGET_CORE_GMS := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
 PRODUCT_NO_CAMERA := false

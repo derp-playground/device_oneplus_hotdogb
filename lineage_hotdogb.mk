@@ -19,6 +19,7 @@ WITH_GMS := true
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
 PRODUCT_NO_CAMERA := false
+TARGET_DEFAULT_PIXEL_LAUNCHER := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingChipset="Snapdragon 855+" \
